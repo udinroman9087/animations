@@ -1,0 +1,154 @@
+#elem{
+   border: 1px solid black;
+   width: 200px;
+   height: 200px;
+   transition: all 1s ease-out;
+   background-color: rgb(255, 255, 255);
+    }
+#elem:hover {
+    background-color: blueviolet;
+    border: 1px solid blueviolet;
+}
+#elem2{
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    transition: all 1s ease-out;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+}
+#elem2:hover{
+    color: rgb(255, 255, 255);
+    background-color: blueviolet;
+    border: 1px solid blueviolet;
+}
+#elem3{
+    border: 1px solid rgb(5, 219, 69);
+    width: 200px;
+    height: 200px;
+    transition: width 1s ease 1s;
+    background-color: rgb(255, 255, 255);
+}
+#elem3:hover {
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    border: 1px solid rgb(5, 219, 69);
+}
+#elem5{
+    border: 1px solid rgb(17, 164, 201);
+    width: 200px;
+    height: 200px;
+    transition: width 2s ease 2s;
+    background-color: rgb(255, 255, 255);
+}
+#elem5:hover {
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    border: 1px solid rgb(17, 164, 201);
+}
+#elem6{
+    border: 1px solid rgb(255, 3, 234);
+    width: 200px;
+    height: 200px;
+    transition: width 1s ease 1s;
+    background-color: rgb(255, 255, 255);
+}
+#elem6:hover {
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    border: 1px solid rgb(255, 3, 234);
+}
+@keyframes move {
+	from {
+		width: 200px;
+	}
+	to {
+		width: 400px;
+	}
+}
+
+#elem7 {
+	animation-play-state: paused;
+	animation-duration: 1s;
+	animation-name: move;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	border: 1px solid rgb(0, 255, 157);
+	height: 50px;
+}
+#elem7:hover {
+	animation-play-state: running;
+}
+
+@keyframes1 move1 {
+	from1 {
+		margin-left: 0;
+	}
+	to1 {
+		margin-left: 500px;
+	}
+}
+
+#target1 {
+	border: 1px solid rgb(0, 255, 76);
+	margin-bottom: 10px;
+	width: 50px;
+	height: 50px;
+}
+
+#elem8 {
+    animation-play-state: paused;
+    animation-duration: 3s;
+    animation-name: move;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border: 1px solid rgb(255, 0, 0);
+    width: 50px;
+    height: 50px;
+}
+#target1:hover + #elem8 {
+	animation-play-state: running;
+	border: 1px solid rgb(255, 0, 0);
+}
+#elem9 {
+   width: 100px;
+   height: 100px;
+   border: 1px solid rgb(25, 0, 255);
+   transition: transform 1s ease;
+    }
+#elem9:hover {
+        transform: translate(30px);
+    }
+#elem10 {
+        width: 100px;
+        height: 100px;
+        border: 1px solid rgb(255, 187, 0);
+        transition: transform 1s ease;
+         }
+#elem10:hover {
+             transform: scale(1.5);
+         }
+#elem11 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid rgb(0, 217, 255);
+            transition: transform 1s ease;
+             }
+#elem11:hover {
+                 transform: scale(1.5);
+             }    
+#elem12 {
+    border: 1px solid rgb(69, 0, 134);
+    width: 100px;
+    height: 50px;
+    transition: transform 1s ease;
+}
+#elem12:hover {
+    transform-origin: right bottom;
+    transform: scale(1.5);
+}
+
+
+
+
+
